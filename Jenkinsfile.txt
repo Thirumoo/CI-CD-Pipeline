@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'echo Building on Windows!'
+                // You can add your Windows build commands here
+            }
+        }
+        stage('Test') {
+            steps {
+                bat 'echo Running tests on Windows!'
+                // Add test commands here
+            }
+        }
+    }
+}
